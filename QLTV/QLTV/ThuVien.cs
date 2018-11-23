@@ -38,7 +38,7 @@ namespace QLTV
             this.STenThuVien = Console.ReadLine();
             int tongdocgianguoilon = 0;
             Console.WriteLine("-------------------------------------------------");
-            Console.Write("Nhap tong so ti vi: ");
+            Console.Write("Nhap tong so doc gia nguoi lon: ");
             tongdocgianguoilon = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < tongdocgianguoilon; i++)
             {
@@ -51,12 +51,12 @@ namespace QLTV
 
             int tongdocgiatreem = 0;
             Console.WriteLine("-------------------------------------------------");
-            Console.Write("Nhap tong so dien thoai: ");
+            Console.Write("Nhap tong so doc gia tre em: ");
             tongdocgiatreem = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < tongdocgiatreem; i++)
             {
                 Console.WriteLine("-------------------------------------------------");
-                Console.WriteLine("Nhap thong tin Dien Thoai thu {0}: ", i + 1);
+                Console.WriteLine("Nhap thong tin doc gia tre em thu {0}: ", i + 1);
                 DocGia dgte = new DocGia_TreEm();
                 dgte.Nhap();
                 this.LDocGia.Add(dgte);
@@ -70,7 +70,7 @@ namespace QLTV
                 Console.WriteLine("-------------------------------------------------");
                 Console.WriteLine("Nhap thong tin NXB thu {0}: ", i + 1);
                 NXB nxb = new NXB();
-                nxb.Nhap();
+                //nxb.Nhap();
                 this.LNXB.Add(nxb);
             }
         }
